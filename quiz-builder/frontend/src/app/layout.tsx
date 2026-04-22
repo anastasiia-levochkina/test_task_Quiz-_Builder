@@ -1,12 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
-import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-});
 
 export const metadata = {
   title: 'Quiz Builder',
@@ -27,7 +21,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body>
         <Navbar />
         <main className="main-container">{children}</main>
       </body>
