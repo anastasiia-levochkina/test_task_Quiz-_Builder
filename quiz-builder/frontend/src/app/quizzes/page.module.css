@@ -1,0 +1,23 @@
+.wrapper {
+  padding-top: 24px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  color: #374151;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 500;
+}

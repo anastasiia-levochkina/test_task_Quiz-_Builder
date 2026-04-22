@@ -1,0 +1,62 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.title:hover {
+  opacity: 0.75;
+}
+
+.count {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editLink {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: white;
+  color: var(--text);
+  padding: 10px 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.editLink:hover {
+  background: #f3f4f6;
+}
+
+.deleteButton {
+  border: none;
+  border-radius: 10px;
+  background: var(--danger);
+  color: white;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.deleteButton:hover {
+  background: var(--danger-hover);
+}

@@ -1,0 +1,99 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.removeButton,
+.addOptionButton,
+.smallRemoveButton {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.removeButton {
+  background: #ef4444;
+  color: white;
+  padding: 8px 12px;
+}
+
+.removeButton:hover {
+  background: #dc2626;
+}
+
+.addOptionButton {
+  background: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  margin-top: 12px;
+}
+
+.addOptionButton:hover {
+  background: #1d4ed8;
+}
+
+.smallRemoveButton {
+  background: #f3f4f6;
+  padding: 8px 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #c7cdd4;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.04);
+}
+
+.optionsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.optionRow {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+}

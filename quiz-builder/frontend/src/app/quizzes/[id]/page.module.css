@@ -1,0 +1,45 @@
+.wrapper {
+  padding-top: 24px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.questionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.questionTitle {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.type {
+  margin-bottom: 12px;
+  color: var(--muted);
+}
+
+.answer {
+  font-weight: 500;
+}
+
+.optionsList {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.optionItem {
+  margin-bottom: 6px;
+}

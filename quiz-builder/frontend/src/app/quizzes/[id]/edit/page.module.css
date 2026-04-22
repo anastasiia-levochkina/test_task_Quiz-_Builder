@@ -1,0 +1,93 @@
+.wrapper {
+  padding-top: 24px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #c7cdd4;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.04);
+}
+
+.questionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.secondaryButton,
+.submitButton {
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.secondaryButton {
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+  transition: background 0.2s ease;
+}
+
+.submitButton {
+  border: none;
+  background: var(--primary);
+  color: white;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background: var(--primary-hover);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondaryButton:hover {
+  background: #f3f4f6;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.message {
+  color: #374151;
+}
